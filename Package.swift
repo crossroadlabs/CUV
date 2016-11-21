@@ -22,5 +22,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "CUV"
+    name: "CUV",
+    pkgConfig: "libuv",
+    providers: [
+        .Apt("libuv-dev"),
+        .Brew("libuv")
+    ]
 )
