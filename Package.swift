@@ -25,7 +25,7 @@ let package = Package(
     name: "CUV",
     pkgConfig: "libuv",
     providers: [
-        .Apt("libuv-dev"),
+        .Apt("libuv1-dev"),
         .Brew("libuv")
     ]
 )
